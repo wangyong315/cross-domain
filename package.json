@@ -1,23 +1,30 @@
 {
-  "name": "cross-domain",
+  "name": "write-webpack",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wangyong315/cross-domain.git"
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
+    "less": "^4.1.1",
+    "less-loader": "^8.1.1",
+    "mini-css-extract-plugin": "^1.5.0",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wangyong315/cross-domain/issues"
-  },
-  "homepage": "https://github.com/wangyong315/cross-domain#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
